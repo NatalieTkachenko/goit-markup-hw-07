@@ -47,9 +47,9 @@
 
 }
 
-.portfolio__filtr-btn:active,
-.portfolio__filtr-btn:hover,
-.portfolio__filtr-btn:focus {
+    &:active,
+    &:hover,
+    &:focus {
     color: #FFFFFF;
     background: #2196F3;
 }
