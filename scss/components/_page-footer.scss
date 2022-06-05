@@ -17,10 +17,13 @@ footer {
 .footer__adress-list-item {
     list-style: none;
     margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+
 }
 
-.footer__adress-list-item:last-child {
-    margin-bottom: 0;
+
 }
 
 .footer__address {
@@ -107,12 +110,14 @@ footer {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    .footer__net-link:hover &,
+    .footer__net-link:focus & {
+        background-color:#2196F3;
 }
 
-.footer__net-link:hover .footer__net-icon-box,
-.footer__net-link:focus .footer__net-icon-box {
-    background-color:#2196F3;
 }
+
+
 
 .footer__net-icon {
     fill: #ffff;

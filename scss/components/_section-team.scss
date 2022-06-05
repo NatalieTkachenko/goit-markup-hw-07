@@ -101,6 +101,11 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        .team__net-icon-link:hover &,
+        .team__net-icon-link:focus & {
+            background-color: #2196F3;
+        }
     }  
 
     .team__net-icon {
@@ -109,18 +114,18 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .team__net-icon-link:hover .team__net-icon-thumb,
-        .team__net-icon-link:focus .team__net-icon-thumb {
-            background-color: #2196F3;
-        }
 
 
-        .team__net-icon-link:hover .team__net-icon,
-        .team__net-icon-link:focus .team__net-icon {
+        .team__net-icon-link:hover &,
+        .team__net-icon-link:focus & {
             fill: #ffffff;
         }
+        }
+
+        
+
+
+        
 
 }
 

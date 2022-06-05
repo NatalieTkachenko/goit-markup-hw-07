@@ -16,11 +16,13 @@
 
 .advantage__list-item {
     width: 270px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.advantage__list-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .advantage__icon-area {
     height: 120px;

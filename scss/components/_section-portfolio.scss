@@ -18,11 +18,13 @@
 .portfolio__filtr-item {
     margin-left: 8px;
     list-style: none;
-}
 
-.portfolio__filtr-item:first-child {
+    
+&:first-child {
     margin-left: 0;
 }
+}
+
 
 .portfolio__filtr-btn {
     padding: 6px 22px;
@@ -45,8 +47,6 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-
     &:active,
     &:hover,
     &:focus {
@@ -54,6 +54,10 @@
     background: #2196F3;
 }
 
+
+}
+
+    
 
 /*-------------------PORTFOLIO-PROJECTS-----------------*/
 
@@ -72,12 +76,14 @@
 .portfolio__project-list-item {
     margin-right: 30px;
     margin-bottom: 30px;
+
+    
+&:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
     
 }
 
-.portfolio__project-list-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .portfolio__project-thumb {
     position: relative;
@@ -99,11 +105,13 @@
     transition-property: transform, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio__project-list-item:hover .portfolio__project-pic-overlay {
+    
+.portfolio__project-list-item:hover & {
     opacity: 1;
     transform: translateY(0);    
+}
+
 }
 
     
